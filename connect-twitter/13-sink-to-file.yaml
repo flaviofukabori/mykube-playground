@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kafka-consumer
+spec:
+  securityContext:
+    runAsUser: 1001
+    runAsGroup: 1000
+    fsGroup: 1000
+  containers:
+    - name: consumer
+      image: quay.io/strimzi/kafka:0.32.0-kafka-3.3.1
+      args:
+        - /bin/bash
+      stdin: true
+      stdinOnce: true
+      tty: true
+      volumeMounts:
+        - mountPath: /host
+          name: host-mount
+  volumes:
+    - name: host-mount
+      hostPath:
+        path: /host

@@ -1,0 +1,16 @@
+verificar local pv
+verificar se consumer ficaa eem "waiting" - ok
+verificar como instala kafka connect -
+    https://strimzi.io/docs/operators/latest/overview.html#configuration-points-connect_str
+    https://strimzi.io/docs/operators/latest/deploying.html#creating-new-image-from-base-str
+verificar como instalar plugin do debezium no kafka connect
+    https://debezium.io/documentation/reference/stable/operations/kubernetes.html
+
+analisar criação de banco de dados e updates
+Consultar topicos criados pelo debezium
+fazer banco sakila funcionar cdc
+
+extrair dados do twitter - kafka connect
+https://dok.community/blog/build-your-own-social-media-analytics-with-apache-kafka/
+https://github.com/scholzj/DoK-Day-KubeCon-EU-2022/blob/main/10-search.yaml
+https://camel.apache.org/camel-kafka-connector/next/reference/connectors/camel-twitter-search-source-kafka-source-connector.html
